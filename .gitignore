@@ -1,0 +1,15 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+*.log
+
+# Dependency management
+Gemfile.lock
+/node_modules
+
+# Editor/OS files
+.DS_Store
+Thumbs.db
