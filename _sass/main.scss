@@ -1,3 +1,37 @@
+/* Set the base font size for the entire document */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0px;
+  font-size: 1rem; /* 16px */
+}
+
 .current {
   color: red;
+}
+
+.container {
+  width: 100%;
+  height: 4rem;
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left-nav {
+    }
+
+    .right-nav {
+    }
+
+    a {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
 }

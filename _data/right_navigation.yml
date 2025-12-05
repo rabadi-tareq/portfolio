@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+- name: Skills
+  link: /about.html
+- name: Projects
+  link: /blog.html
+- name: Experience
+  link: /staff.html
+- name: Certification
+  link: /
+- name: Education
+  link: /about.html
+- name: Blog
+  link: /blog.html
+- name: Contact
+  link: /staff.html
