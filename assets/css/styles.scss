@@ -1,3 +1,20 @@
 ---
 ---
+// The order of the partials included is important
+@import "variables";
 @import "main";
+@import "navigation";
+
+@import url('fonts.googleapis.com');
+
+
+html {
+  font-size: 16px; 
+  font-family: sans-serif;
+    
+}
+
+body {
+  margin: 0px;
+  font-size: 1rem; 
+}
