@@ -1,0 +1,30 @@
+$default-padding: 12rem;
+
+.projects-container {
+    width: 100%;
+    margin: 100px;
+    padding: 0px;
+
+    .table {
+        width: 100%;
+        padding-left: $default-padding;
+        padding-right: $default-padding;
+
+        .header-row {
+            td {
+                font-size: 2rem;
+                font-family: "Courier New", Courier, monospace;
+                font-weight: 545;
+                padding: 0px;
+            }
+        }
+
+        .underline {
+            td {
+                height: 10px;
+                width: 20%;
+               
+            }
+        }
+    }
+}
