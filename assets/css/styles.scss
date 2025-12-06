@@ -4,6 +4,7 @@
 @import "variables";
 @import "main";
 @import "navigation";
+@import "banner";
 
 @import url('fonts.googleapis.com');
 
@@ -17,4 +18,5 @@ html {
 body {
   margin: 0px;
   font-size: 1rem; 
+  display: grid;
 }

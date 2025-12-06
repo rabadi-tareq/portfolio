@@ -1,0 +1,125 @@
+.banner-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0fefc;
+    border: 1px solid black;
+
+    .table {
+        width: 100%;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            .left-section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .name {
+                    font-size: 3rem;
+                    font-family: "Open Sans", Arial, sans-serif;
+                }
+
+                .certifications {
+                }
+            }
+
+            .right-section {
+                .basic-info {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: fuchsia;
+                    padding-right: 50px;
+                    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+                    div {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .titles-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-start;
+            padding-left: 1rem;
+
+            .title {
+                color: blue;
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right: 10px;
+            }
+
+            .separator {
+                color: grey;
+                font-weight: 900;
+                padding-right: 10px;
+            }
+        }
+
+        .social-media-row {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 1rem;
+            padding-top: 1.5rem;
+
+            td {
+                padding-right: 1rem;
+            }
+
+            img {
+                filter: drop-shadow(5px 5px 10px rgba(96, 101, 109, 0.5));
+                border-radius: 10px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .bio-row {
+            
+            .content {
+                
+                padding-left: 1rem;
+                padding-top: 1.5rem;
+                font-size: 1.3rem;
+
+                pre {
+                    font-family: "inter", sans-serif;
+                    color: #3a414a;
+                    margin: 10px;
+                }
+            }
+        }
+
+        .domains-row {
+            display: flex;
+             padding-left: 5rem;
+             padding-bottom: 1rem;
+             font-size: 1.1rem;
+             justify-content: flex-start;
+
+             td {
+                display: list-item;
+                color: #1071e5;
+                font-weight: 500;
+                
+                //  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                //  font-family: Arial, Helvetica, sans-serif;
+                  font-family: 'Courier New', Courier, monospace;
+                
+                padding-right: 2rem;
+                list-style-type: disc;
+                list-style-position: outside;
+             }
+
+        }
+    }
+}

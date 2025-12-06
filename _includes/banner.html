@@ -1,0 +1,52 @@
+<div class="banner-container">
+  <table class="table">
+    <tr class="header-row">
+      <td class="left-section">
+        <div class="name">TAREQ RABADI</div>
+        <div class="certifications"></div>
+      </td>
+      <td class="right-section">
+        <div class="basic-info">
+          <div>U.S Citizen</div>
+          <div>rabadi.tareq@gmail.com</div>
+          <div>Novi, MI</div>
+        </div>
+      </td>
+    </tr>
+    <tr class="titles-row">
+      <td class="title">Engineer</td>
+      <td class="separator">|</td>
+      <td class="title">Lead</td>
+      <td class="separator">|</td>
+      <td class="title">Architect</td>
+    </tr>
+    <tr class="social-media-row">
+      <td>
+        <a href="https://www.linkedin.com/in/tareq-rabadi/" target="_blank">
+          <img src="\assets\images\linkedin.svg" alt="linked profile"
+        /></a>
+      </td>
+      <td>
+        <a href="https://github.com/rabadi-tareq" target="_blank">
+          <img src="\assets\images\github.svg" alt="github profile"
+        /></a>
+      </td>
+    </tr>
+    <tr class="bio-row">
+      <td class="content" colspan="2">
+        <ul>
+          {% for item in site.data.bio_items %}
+          <li>
+            <pre>{{item.name}}</pre>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    <tr class="domains-row">
+      {% for item in site.data.domains %}
+      <td>{{item.name}}</td>
+      {% endfor %}
+    </tr>
+  </table>
+</div>
