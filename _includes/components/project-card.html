@@ -1,0 +1,37 @@
+<div class="project-card-container">
+ <div class="image">
+    <a href= {{ include.project.github }} target="_blank">
+      <img src= {{ include.project.image }}  alt=""></a>
+ </div>
+    <div class="title">
+        {{include.project.title}}
+    </div>
+    <div class="description">
+        {{include.project.description}}
+    </div>
+    <div class="tech">
+        {% for techItem in include.project.tech2 %}
+        <div class="item">
+            {{techItem}}
+        </div>
+        {% endfor %}
+    </div>
+    <div class="tags">
+        {% for tagItem in include.project.tags %}
+            <div class="{{tagItem}}">
+                #{{tagItem}}
+            </div> 
+        {% endfor %}
+    </div>
+    <div class="action-buttons">
+       <a href={{ include.project.github }} target="_blank" class="button-link">
+        Read More
+        <img src="\assets\images\forward-arrow-3.svg" alt="view more"/>
+     </a>
+        <a href={{ include.project.github }} target="_blank" class="button-link">
+         View Code
+           <img src="\assets\images\github.svg" alt="github profile"/>
+        </a>
+     
+    </div>
+</div>

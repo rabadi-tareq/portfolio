@@ -1,0 +1,24 @@
+<div class="projects-container">
+  <div class="center">
+    <table class="table">
+      <tr>
+        <td>
+        <table>
+          <tr>
+          <td>
+          {% include components/underline.html header="Projects" %}
+          </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+      <td class="projects">
+      {% for project in site.projects %}
+      <div> {% include components/project-card.html project=project %}</div>
+      {% endfor %}
+      </td>
+      </tr>
+    </table>
+  </div>
+</div>

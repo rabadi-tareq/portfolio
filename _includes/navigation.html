@@ -3,7 +3,6 @@
     <td>
       <nav class="left-nav">
         {% for item in site.data.left_navigation %}
-          <div>
               <a href="{{ item.link }}" class="top-left-downloads">
               {{ item.name }}
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="blue" class="download-icon">
@@ -11,7 +10,6 @@
                     <path d="M3.5 9.75a.75.75 0 0 0-1.5 0v1.5A2.75 2.75 0 0 0 4.75 14h6.5A2.75 2.75 0 0 0 14 11.25v-1.5a.75.75 0 0 0-1.5 0v1.5c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25v-1.5Z" />
                 </svg>
                 </a>
-          </div>
         {% endfor %}
       </nav>
     </td>
@@ -19,9 +17,11 @@
       <div>
         <nav class="right-nav">
           {% for item in site.data.right_navigation %}
-            <a href="{{ item.link }}"
-            {% if page.url == item.link %} class="selected-link" {% else %} class="default-link" {% endif %}>
-            {{ item.name }}</a>
+            {% if item.show %}
+              <a href="{{ item.link }}"
+              {% if page.url == item.link %} class="selected-link" {% else %} class="default-link" {% endif %}>
+              {{ item.name }}</a>
+            {% endif %}
           {% endfor %}
         </nav>
       </div>

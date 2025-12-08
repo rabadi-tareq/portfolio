@@ -1,0 +1,29 @@
+.underlined-title-container {
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+    .title {
+        font-size: 2rem;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 545;
+        
+        width: fit-content;
+        font-weight: 600;
+    }
+
+    .underline {
+        display: flex;
+
+        .first-section {
+            width: 25%;
+            min-height: 5px;
+            background-color: #4397ff;
+        }
+
+        .second-section {
+            width: 75%;
+            background-color: #ffe342;
+        }
+    }
+}

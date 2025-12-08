@@ -1,0 +1,30 @@
+$default-padding: 12rem;
+
+.projects-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .center {
+        
+        width: 90%;
+
+        .table {
+            display: flex;
+            justify-content: flex-start;
+            
+            
+            margin-left: $default-padding;
+            margin-right: $default-padding;
+
+            .projects {
+                display: flex;
+                //justify-content: center;
+                flex-wrap: wrap;
+                
+                
+            }
+        }
+    }
+}

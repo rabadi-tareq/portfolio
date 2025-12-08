@@ -1,0 +1,112 @@
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: clip; // helps remove the outliers tech bars
+  padding-top: 5rem;
+  width: 420px;
+
+  .image {
+    padding: 0.5rem;
+
+    img {
+      //filter: drop-shadow(5px 5px 5px rgba(0, 100, 255, 0.5));
+      box-shadow: 5px 8px 5px rgba(0, 100, 255, 0.5);
+
+      border-radius: 15px;
+      width: max-content;
+      height: max-content;
+    }
+  }
+
+  .title {
+    color: orangered;
+    font-size: 2rem;
+    padding-left: 0.7rem;
+  }
+
+  .description {
+    color: grey;
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+    width: 80%;
+    height: 50px;
+  }
+
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    height: 100px;
+    max-width: 400px;
+
+    .item {
+      display: list-item;
+      list-style-type: "|";
+      list-style-position: outside;
+      padding: 0.6rem;
+      color: blue;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    width: 90%;
+    
+    .openSource {
+      background-color: #fff7a1;
+      color: #fe7070;
+      padding: 0.4rem;
+    }
+
+    .playground {
+      background-color: #f4d9ff;
+      color: #057711;
+      padding: 0.4rem;
+    }
+
+    .solo {
+      background-color: #c3f7c8;
+      color: #d916a8;
+      padding: 0.4rem;
+    }
+
+    .e-com {
+      background-color: greenyellow;
+      color: #d916a8;
+      padding: 0.4rem;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    padding-top: 1.5rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    img {
+      filter: drop-shadow(5px 5px 10px rgba(96, 101, 109, 0.5));
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .button-link {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #f6f6f7;
+      color: black;
+      cursor: pointer;
+      border: 2px solid black;
+      width: 33%;
+      border-radius: 7px;
+      margin-right: 10px;
+      height: 1.5rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+}

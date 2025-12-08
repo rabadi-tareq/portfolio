@@ -2,21 +2,22 @@
 ---
 // The order of the partials included is important
 @import "variables";
-@import "main";
 @import "navigation";
 @import "banner";
+@import "projects";
+@import "components/underlinedTitle";
+@import "components/project-card";
 
-@import url('fonts.googleapis.com');
 
 
 html {
   font-size: 16px; 
   font-family: sans-serif;
-    
 }
 
 body {
-  margin: 0px;
-  font-size: 1rem; 
   display: grid;
+  margin: 0px;
+  font-size: 1rem;
 }
+
