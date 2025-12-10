@@ -5,16 +5,25 @@
   padding-top: 5rem;
   width: 420px;
 
+  $shadow-color: rgba(0, 0, 0, 0.2);
+  $transition-speed: 0.4s;
+
   .image {
     padding: 0.5rem;
 
     img {
-      //filter: drop-shadow(5px 5px 5px rgba(0, 100, 255, 0.5));
-      box-shadow: 5px 8px 5px rgba(0, 100, 255, 0.5);
+      box-shadow: 0 4px 8px $shadow-color;
+      transition:
+        transform $transition-speed ease,
+        box-shadow $transition-speed ease;
 
-      border-radius: 15px;
-      width: max-content;
-      height: max-content;
+      cursor: pointer;
+      border-radius: 20px;
+
+      &:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 12px 24px $shadow-color;
+      }
     }
   }
 
@@ -22,6 +31,8 @@
     color: orangered;
     font-size: 2rem;
     padding-left: 0.7rem;
+    height: 4rem;
+    visibility: hidden;
   }
 
   .description {
@@ -29,7 +40,8 @@
     padding-left: 0.7rem;
     padding-top: 1rem;
     width: 80%;
-    height: 50px;
+    line-height: 1.5; 
+    height: 90px;
   }
 
   .tech {
@@ -37,7 +49,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 1rem;
-    height: 100px;
+//    height: 100px; might be needed later if one item has a lot more tags than average
     max-width: 400px;
 
     .item {
@@ -56,29 +68,72 @@
     padding-top: 1rem;
     padding-left: 0.5rem;
     width: 90%;
-    
-    .openSource {
-      background-color: #fff7a1;
-      color: #fe7070;
-      padding: 0.4rem;
-    }
 
-    .playground {
-      background-color: #f4d9ff;
-      color: #057711;
-      padding: 0.4rem;
-    }
+    .tooltip-container {
+      /* Required for positioning the tooltip relative to this element */
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
 
-    .solo {
-      background-color: #c3f7c8;
-      color: #d916a8;
-      padding: 0.4rem;
-    }
+      /* The actual tooltip element (hidden by default) */
+      &::after {
+        content: attr(data-tooltip); /* Gets text from the data-tooltip attribute */
+        position: absolute;
+        bottom: 100%; /* Position above the element */
+        left: 110%;
+        transform: translateX(-50%);
+        width: 150px;
+        background-color: #f7f7b2;
+        color: crimson;
+        // background-color: #b2f1f3;
+        // color: crimson;
+        padding: 5px 5px;
+        border-radius: 6px;
+        border: .5px solid black;
+        /* Hiding mechanism and transition */
+        opacity: 0;
+        
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
+      }
 
-    .e-com {
-      background-color: greenyellow;
-      color: #d916a8;
-      padding: 0.4rem;
+      &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        /* Optional: slight movement up when appearing */
+        bottom: calc(100% + 5px);
+      }
+
+      .openSource {
+        background-color: #fff7a1;
+        color: #fe7070;
+        padding: 0.4rem;
+      }
+
+      .playground {
+        background-color: #f4d9ff;
+        color: #057711;
+        padding: 0.4rem;
+      }
+
+      .foundational {
+        background-color: rgb(255, 180, 215);
+        color: rgb(65, 61, 61);
+        padding: 0.4rem;
+      }
+
+      .showcase {
+        background-color: #c3f7c8;
+        color: #d916a8;
+        padding: 0.4rem;
+      }
+
+      .businessValue {
+        background-color: #f57d68;
+        color: #ffffff;
+        padding: 0.4rem;
+      }
     }
   }
 

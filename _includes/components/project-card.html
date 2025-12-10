@@ -3,9 +3,7 @@
     <a href= {{ include.project.github }} target="_blank">
       <img src= {{ include.project.image }}  alt=""></a>
  </div>
-    <div class="title">
-        {{include.project.title}}
-    </div>
+   
     <div class="description">
         {{include.project.description}}
     </div>
@@ -18,9 +16,12 @@
     </div>
     <div class="tags">
         {% for tagItem in include.project.tags %}
-            <div class="{{tagItem}}">
+            
+            <div class="tooltip-container" data-tooltip="{{ site.data.tags[tagItem] }}">
+                <div class="{{tagItem}}">
                 #{{tagItem}}
             </div> 
+            </div>
         {% endfor %}
     </div>
     <div class="action-buttons">

@@ -15,7 +15,9 @@
       <tr>
       <td class="projects">
       {% for project in site.projects %}
-      <div> {% include components/project-card.html project=project %}</div>
+        {% if project.show %}
+        <div> {% include components/project-card.html project=project %}</div>
+        {% endif %}
       {% endfor %}
       </td>
       </tr>
