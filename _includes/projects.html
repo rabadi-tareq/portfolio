@@ -19,7 +19,8 @@
       </tr>
       <tr>
       <td class="projects">
-      {% for project in site.projects %}
+      {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+      {% for project in sorted_projects %}
         {% if project.show %}
         <div> {% include components/project-card.html project=project %}</div>
         {% endif %}

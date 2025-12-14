@@ -1,8 +1,8 @@
 # Copyright 2025 JamilWare Technologies
 # SPDX-License-Identifier: gpl-3.0
 
-foundational: "Data structures, algorithms and architecture."
-playground: "Experimenting with technology features to learn possibilities."
-showcase: "Demonstrating the different features of a technology in one example solution."
-openSource: "Built with hybrid technolgoies, and allows developers to gain open source experience in application development."
-businessValue: Inspired by real-world scenarios and the outcome has a potential business value.
+foundational: "Relates to data structures, algorithms, architecture and/or querying."
+playground: "Experimenting with programming languages features to learn possibilities."
+showcase: "Demonstrates the numerous features of one or more technologies in one example solution."
+openSource: "Allows community developers to engage and gain experience in open-source application development."
+businessValue: Inspired by real-world scenarios where the outcome has a potential business value.
