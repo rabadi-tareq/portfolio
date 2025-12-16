@@ -4,31 +4,51 @@
  */
 
 .underlined-title-container {
-    
     display: flex;
     flex-direction: column;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
+
     .title {
         font-size: 2rem;
-        font-family: "Courier New", Courier, monospace;
-        font-weight: 545;
-        
-        width: fit-content;
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: 525;
+        color: #424a55;
         font-weight: 600;
     }
 
     .underline {
         display: flex;
+        padding-top: 0.4rem;
 
         .first-section {
-            width: 25%;
+            width: 10%;
             min-height: 5px;
-            background-color: #4397ff;
+            background-color: #f85aeb;
         }
 
         .second-section {
-            width: 75%;
-            background-color: #ffe342;
+            width: 15%;
+            background-color: #ffb4d7;
+        }
+        .third-section {
+            width: 17%;
+            min-height: 5px;
+            background-color: #c3f7c8;
+        }
+
+        .fourth-section {
+            width: 20%;
+            background-color: #f5ec8f;
+        }
+        .fifth-section {
+            width: 25%;
+            min-height: 5px;
+            background-color: #fa8e7b;
+        }
+        .sixth-section {
+            width: 40%;
+            min-height: 5px;
+            background-color: #a1caf8;
         }
     }
 }
