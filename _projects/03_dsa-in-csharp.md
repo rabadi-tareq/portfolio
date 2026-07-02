@@ -6,6 +6,6 @@ github: https://github.com/rabadi-tareq/data-structures-and-algorithms-in-c-shar
 tech: [C#, algorithms, sorting, search, graph, dynamic, NP, greedy] 
 tags: [foundational]
 image: /assets/images/projects/dsa-in-csharp.png
-show: true
+show: false
 date: 14/12/2025
 ---

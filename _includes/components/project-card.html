@@ -15,10 +15,10 @@
     <div class="last-updated">
         Last Updated - {{include.project.date | date: "%B %d, %Y"  }}
     </div>
-    <div class="tech">
-        {% for techItem in include.project.tech %}
+    <div class="topic">
+        {% for topic in include.project.topics %}
         <div class="item">
-            {{techItem}}
+            {{topic}}
         </div>
         {% endfor %}
     </div>
