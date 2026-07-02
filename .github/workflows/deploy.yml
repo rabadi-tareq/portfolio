@@ -42,7 +42,15 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@://github.com"
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of GitHub project timestamps [skip ci]" && git push)
+        git add _data/github_projects.json
+        # Check if there are actual changes staged for commit
+        if git diff --staged --quiet; then
+          echo "No changes detected in repository data. Skipping commit."
+        else
+          git commit -m "Automated update of GitHub project timestamps [skip ci]"
+          git push
+        fi
+
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
