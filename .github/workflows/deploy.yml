@@ -42,7 +42,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@://github.com"
-        git add _data/github_projects.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of GitHub project timestamps [skip ci]" && git push)
 
     - name: Setup Pages
