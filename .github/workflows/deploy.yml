@@ -42,6 +42,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@://github.com"
+        git add _projects/*.md
         # Check if there are actual changes staged for commit
         if git diff --staged --quiet; then
           echo "No changes detected in repository data. Skipping commit."
